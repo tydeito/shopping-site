@@ -1,0 +1,253 @@
+@import "compass";
+
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #f9f8f6;
+$subColor: #887f69;
+$keyColor: #449F55;
+$fontColor: #000000;
+
+/* Bass
+----------------------------------------------------------------*/
+
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+
+html{ font-size: 62.5%; }
+
+body{
+    color: $fontColor;
+    font-size: 1.2rem;
+    font-family: $baseFontFamily;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    background-color: $baseColor;
+}
+
+h3{
+    font-size: 1.6rem;
+    color: $subColor;
+}
+
+h4{
+    color: $subColor;
+}
+
+
+
+/* header
+----------------------------------------------------------------*/
+
+#page_container {
+        width: 100%;
+        margin: 0 10px 0 10px;
+        
+    //PC表示
+    @media (min-width: 550px){
+        max-width: 942px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+/* header
+----------------------------------------------------------------*/
+    header{
+        #logo{
+            display: inline;
+            text-align: center;
+            
+            //PC表示
+            @media (min-width: 550px){
+            float: left;
+            margin: 22px 0 0 0;
+            }
+        }
+        
+        #PC_menu{
+            
+            width: 60%;
+            max-width:437px;
+            float: right;
+                
+            .PC_menu_li{
+                //list-style-type: none;
+                //float: right;
+                margin: 0;
+                margin-top: 52px;
+                padding: 0;
+                
+                    
+                .PC_menu_item{    
+                    list-style: none;
+                    margin: 0 0 0 0;
+                    padding: 0 0 0 0;
+                    display: inline-block;
+                    
+                    
+
+                    a {
+                        float: left;
+                    }   
+                }
+                
+                .text_menu{
+                    padding-right: 22px;
+                }
+                
+                #text_menu_4{
+                        padding-right: 16px;
+                }
+                
+                #img_menu_1{
+                    padding-right: 10px;
+                }
+                
+            }
+            
+            @media (max-width: 549px) {
+                display: none;
+            }
+            
+        } //PCメニュー
+    }
+    
+}
+
+
+/* cover_area
+----------------------------------------------------------------*/
+
+
+/* main_container
+----------------------------------------------------------------*/
+
+#main_container{
+    width: 100%;
+}
+
+
+/* Main
+----------------------------------------------------------------*/
+
+#main{
+    box-sizing: border-box;
+    
+    @media (min-width: 550px){
+        float: left;
+        width: 76%;
+    }
+        
+    
+    
+    .contents_title{
+        background-repeat: no-repeat;
+        height: 30px;
+    }
+    
+    .item_container{
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+        padding: 10px 10px 20px 10px;
+        background: white;
+        border: solid 1px $baseColor;
+        
+        @media(min-width: 550px){
+            width: 33%;
+            padding: 15px 15px 25px 15px;
+        }
+        
+        .item_img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .contents_title{
+        width: 100%;
+        height: auto;
+        margin: 30px 0;
+    }
+    
+    
+    
+    .flex-box {
+      display: -webkit-flex;
+      display:         flex;
+        
+        
+        .guide_container{
+            width: 50%;
+            box-sizing: border-box;
+            background: white;
+            padding: 20px 20px 30px 20px;
+            
+            img{
+                max-width: 100%;
+                height:auto;
+            }
+        }
+        
+        #guide_container1{
+           border-right: solid 1px $baseColor;
+        }
+        
+        #guide_container2{
+            border-left: solid 1px $baseColor;
+        }
+    
+    }
+}
+
+/* side_bar
+----------------------------------------------------------------*/
+
+#side_bar{
+    
+    @media (min-width: 550px){
+        float: right;
+        width: 23%;
+    }
+    
+    
+    .side_bar_contents_container{
+        padding: 15px 15px 30px 15px;
+        background:white;
+        width:100%;
+    }
+    
+    
+    .side_bar_img{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    .side_bar_btn_container{
+        text-align:center;
+    }
+    
+    .side_bar_btn{
+        
+        .side_bar_btn_img{
+            display: block;
+            margin: 0 auto;
+            max-width: 70%;
+        }
+    }
+    
+    
+}
+
+
+/* footer
+----------------------------------------------------------------*/
