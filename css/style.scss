@@ -48,7 +48,7 @@ h4{
 ----------------------------------------------------------------*/
 
 #page_container {
-        width: 100%;
+        width: 95%;
         margin: 0 10px 0 10px;
         
     //PC表示
@@ -61,7 +61,7 @@ h4{
 /* header
 ----------------------------------------------------------------*/
     header{
-        #logo{
+        .logo{
             display: inline;
             text-align: center;
             
@@ -69,6 +69,18 @@ h4{
             @media (min-width: 550px){
             float: left;
             margin: 22px 0 0 0;
+            }
+        }
+        
+        .logo_sp{
+            @media(min-width: 550px){
+                display: none;
+            }
+        }
+        
+        .logo_pc{
+            @media(max-width: 549px){
+                display: none;
             }
         }
         
@@ -176,20 +188,46 @@ h4{
         width: 100%;
         height: auto;
         margin: 30px 0;
+        
+        @media (max-width: 549px){
+            display: none;
+        }
+    }
+    
+    .sp_contents_title{
+        
+        text-align: center;
+        margin: 20px 0;
+        
+        @media (min-width: 550px){
+            display: none;
+        }
     }
     
     
     
     .flex-box {
-      display: -webkit-flex;
-      display:         flex;
-        
+      //display: -webkit-flex;
+      //display:         flex;
+      
+      
+        @media (min-width: 550px){
+            
+            display: -webkit-flex;
+            display:         flex;
+            
+        }
         
         .guide_container{
-            width: 50%;
             box-sizing: border-box;
             background: white;
             padding: 20px 20px 30px 20px;
+            
+            
+            @media (min-width: 550px){
+            width: 50%;
+        }
+            
             
             img{
                 max-width: 100%;
@@ -198,7 +236,14 @@ h4{
         }
         
         #guide_container1{
+        
            border-right: solid 1px $baseColor;
+           margin-bottom: 5px;
+           
+           
+           @media (min-width: 550px){
+                margin-bottom: 0;
+            }
         }
         
         #guide_container2{
@@ -218,17 +263,151 @@ h4{
         width: 23%;
     }
     
+/* #item_search
+----------------------------------------------------------------*/
+    
+    #item_search{
+        background: white;
+        padding: 20px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        
+        @media(min-width: 550px){
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .item_search_title{
+            margin-bottom: 10px;
+        }
+        
+        .search_box {
+            margin-bottom: 50px;
+            
+            form {
+                position: relative; /* 基準位置とする */
+            
+                input[type="search"] {
+                    
+                    background-color: #eeeeee;
+                    border: 0;
+                    width: 100%;
+                    height: 30px;
+                    position: absolute; /* 絶対配置 */
+                    left: 0;
+                    top: 0; 
+                }
+                
+                input[type="image"] {
+                    
+                    border: 0;
+                    padding: 7px 9px 7px 0;
+                    position: absolute; /* 絶対配置 */
+                    right: 0; 
+                    top: 0;
+                }
+            }
+        }
+    }//#item_search
+    
+/* side_ber_Menu
+----------------------------------------------------------------*/
+
+    #page_link {
+        margin-bottom: 9px;
+        
+        
+        a{
+            margin-right: 3px;
+            background-repeat: no-repeat;
+            background-image: url("../images/top/next_icon.png");
+            background-position: right;
+            
+        }
+    }
+    
+    #categories{
+        a{
+            background-repeat: no-repeat;
+            background-image: url("../images/top/down_icon.png");
+            background-position: right;
+        }
+    }
+        
+    #Category_last{
+        margin-bottom: 9px;
+    
+    }
+    
+    
+    .side_bar_main_menu{
+        width: 100%;
+        box-sizing: border-box; 
+        background: $subColor;
+        height: 45px;
+        padding: 14px 8px 0 15px;
+        border-bottom: solid 1px $baseColor;
+        text-decoration: none;
+        
+        a{
+            
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        
+    }
+    
+    #shop_info_title{
+        margin-top: 9px;
+        
+        @media (min-width: 550px){
+            margin-top: 0;
+        }
+    }
+    
+    .side_bar_sub_menu{
+        width: 100%;
+        box-sizing: border-box; 
+        background: white;
+        height: 45px;
+        padding: 14px 8px 0 15px;
+        border-bottom: solid 1px $baseColor;
+        
+        a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin-right: 3px;
+            background-repeat: no-repeat;
+            background-image: url("../images/top/next_icon_gray.png");
+            background-position: right;
+            
+        }
+    }
+    
     
     .side_bar_contents_container{
-        padding: 15px 15px 30px 15px;
+        box-sizing: border-box;
+        padding: 15px 15px 20px 15px;
+        margin-bottom: 10px;
         background:white;
         width:100%;
     }
     
     
     .side_bar_img{
-        width: 100%;
+        float: left;
+        width: 50%;
         height: auto;
+        padding-right: 15px;
+        box-sizing: border-box;
+        
+        @media(min-width: 550px){
+            width: 100%;
+            float: none;
+            padding-right: 0;
+        }
     }
     
     
@@ -236,18 +415,77 @@ h4{
         text-align:center;
     }
     
+    .side_text_btn{
+        overflow: auto;
+    }
+    
+    .side_bar_text{
+        padding: 0;
+        margin: 0;
+    }
+    
     .side_bar_btn{
         
         .side_bar_btn_img{
             display: block;
-            margin: 0 auto;
+            margin-top: 15px;
             max-width: 70%;
+            
+            @media (min-width: 550px){
+                margin: 20px auto 0 auto;
+            }
         }
     }
     
     
+}// side_bar
+
+#page_top_container{
+    width:100%;
+    padding-bottom: 20px;
+    border-bottom: solid 1px $subColor;
+    
+    #page_top {
+        margin-top: 60px;
+        float:right;
+    }
 }
 
 
 /* footer
 ----------------------------------------------------------------*/
+
+footer{
+    
+    .footer_text_container{
+        
+        text-align: center;
+        margin: 35px 0 30px 0;
+        
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .footer_dot{
+            margin-right: 10px;
+            margin-left: 10px;
+            
+            @media (min-width: 550px){
+                margin-right: 18px;
+                margin-left: 18px;
+            }
+        }
+        
+        .footer_text{
+            display: inline;
+        }
+    }
+    
+    #copyright{
+        text-align: center;
+        color: #bcbcbc;
+        margin-bottom: 155px;
+    }
+
+}
