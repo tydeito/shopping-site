@@ -6,6 +6,17 @@
 	<title>APPLE BERRY</title>
 	<meta content="雑貨屋APPLE BERRYのホームページです。" name="descriprion">
 	<link rel="stylesheet" href="css/normalize.css">
+	
+	<!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- Owl Carouselを動作させるために追加 -->
+    <script src="shopping-site.js"></script>
+    
 	<link href="./css/style.css" rel="stylesheet">
 	<link href="images/favicon.png" rel="icon" type="image/png"><!--favicon-->
 </head>
@@ -27,24 +38,53 @@
 							</li>
 							<li class="PC_menu_item text_menu" id="text_menu_2">
 								<a href="index.html"><img class="menu_item_img" src="images/top/menu_cart.png" alt="Cart"/></a>
-								
 							</li>
 							<li class="PC_menu_item text_menu" id="text_menu_3">
 								<a href="index.html"><img class="menu_item_img" src="images/top/menu_mypage.png" alt="My_Page"/></a>
-								
 							</li>
 							<li class="PC_menu_item text_menu" id="text_menu_4">
 								<a href="index.html"><img class="menu_item_img" src="images/top/menu_guide.png" alt="Guide"/></a>
-								
 							</li>
 							<li class="PC_menu_item img_menu" id="img_menu_1">
 								<a href="index.html"><img alt="Instagram" src="images/top/insta.png"></a>
-								
 							</li>
 							<li class="PC_menu_item img_menu" id="img_menu_2">
 								<a href="index.html"><img alt="facebook" src="images/top/facebook.png"></a>
+							</li>
+						</ul>
+					</div><!--#menu-->
+					<div id="SP_menu">
+						<ul class="SP_menu_li">
+							<li class="SP_menu_item SP_img_menu" id="SP_img_menu_1">
+								<a href="index.html"><img alt="facebook" src="images/top_sp/fb.png" srcset="images/top_sp/fb@2x.png 2x" ></a>
 								
 							</li>
+							<li class="SP_menu_item SP_img_menu" id="SP_img_menu_2">
+								<a href="index.html"><img alt="Instagram" src="images/top_sp/insta.png" srcset="images/top_sp/insta@2x.png 2x" ></a>
+								
+							</li>
+							<div id="hamburger_menu_container"><li class="SP_menu_item SP_img_menu" id="SP_img_menu_3 hamburger_menu">
+								<a href="index.html"><img alt="Menu" src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png 2x" ></a>
+							</li>
+							</div>
+							
+							<div class="SP_sub_menu_li_container">
+								<ul class="SP_sub_menu_li">
+									<li class="SP_sub_menu_item text_menu" id="text_menu_1">
+											<a href="index.html"><img class="menu_item_img" src="images/top/menu_login.png" alt="Login"/></a>
+									</li>
+									<li class="SP_sub_menu_item text_menu" id="text_menu_2">
+										<a href="index.html"><img class="menu_item_img" src="images/top/menu_cart.png" alt="Cart"/></a>
+									</li>
+									<li class="SP_sub_menu_item text_menu" id="text_menu_3">
+										<a href="index.html"><img class="menu_item_img" src="images/top/menu_mypage.png" alt="My_Page"/></a>
+									</li>
+									<li class="SP_sub_menu_item text_menu" id="text_menu_4">
+										<a href="index.html"><img class="menu_item_img" src="images/top/menu_guide.png" alt="Guide"/></a>
+									</li>
+								</ul>
+							</div>
+							
 						</ul>
 					</div><!--#menu-->
 				</div><!--#header_in-->
@@ -53,7 +93,12 @@
     	<div id ="main_container" class="clearfix">
     		<div id="main">
     			<div id="cover_area">
-    				<div class="container"></div>
+	    			<div class="owl-carousel owl-theme">
+			            <div> <img src="images/top/ca_banner.jpg"> </div>
+			            <div> <img src="images/top/ca_banner.jpg"> </div>
+			            <div> <img src="images/top/ca_banner.jpg"> </div>
+			            <div> <img src="images/top/ca_banner.jpg"> </div>
+			        </div>
     			</div><!--#cover_area-->
     			<div id="contents">
     				<div class="container">
@@ -228,7 +273,7 @@
     	</div><!--.clearfix-->
     	<div class="clearfix" id="page_top_container">
 	    	<div id="page_top">
-	    		<a href="#"><img src="images/top/pagetop.png"></a>
+	    		<a href="#"><img id="page_top_img" src="images/top/pagetop.png"></a>
     		</div>
     	</div>
     	<footer>

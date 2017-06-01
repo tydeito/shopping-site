@@ -42,7 +42,7 @@ h4 {
     @media (min-width: 550px) {
       #page_container header .logo {
         float: left;
-        margin: 22px 0 0 0; } }
+        margin: 22px 0 8px 0; } }
   @media (min-width: 550px) {
     #page_container header .logo_sp {
       display: none; } }
@@ -73,9 +73,67 @@ h4 {
     @media (max-width: 549px) {
       #page_container header #PC_menu {
         display: none; } }
+  #page_container header #SP_menu .SP_menu_li {
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    #page_container header #SP_menu .SP_menu_li .SP_menu_item {
+      list-style: none;
+      margin: 0 13px 0 0;
+      padding: 0 0 0 0;
+      display: inline-block; }
+      #page_container header #SP_menu .SP_menu_li .SP_menu_item a {
+        float: left; }
+    #page_container header #SP_menu .SP_menu_li #SP_img_menu_3 {
+      margin-right: 0; }
+    #page_container header #SP_menu .SP_menu_li #hamburger_menu_container {
+      display: inline-block; }
+      #page_container header #SP_menu .SP_menu_li #hamburger_menu_container #hamburger_menu {
+        cursor: pointer; }
+    #page_container header #SP_menu .SP_menu_li .SP_sub_menu_li_container {
+      position: absolute;
+      z-index: 100;
+      width: 95%; }
+    #page_container header #SP_menu .SP_menu_li .SP_sub_menu_li {
+      display: none;
+      list-style: none;
+      text-align: center;
+      padding: 0; }
+      #page_container header #SP_menu .SP_menu_li .SP_sub_menu_li .SP_sub_menu_item {
+        box-sizing: border-box;
+        height: 50px;
+        padding-top: 16px;
+        background: #f9f8f6;
+        border: solid 1px #887f69; }
+  @media (min-width: 550px) {
+    #page_container header #SP_menu {
+      display: none; } }
 
 /* cover_area
 ----------------------------------------------------------------*/
+/*
+.owl-item {
+    width: auto !important;
+}
+*/
+.owl-dots {
+  margin: 0 !important;
+  text-align: left !important; }
+
+.owl-dot span {
+  margin: auto 10px auto 0 !important;
+  height: 2px !important;
+  width: 25px !important;
+  background: #aaaaaa !important;
+  border-radius: 0 !important; }
+
+.active span {
+  margin: auto 10px auto 0 !important;
+  height: 2px !important;
+  width: 25px !important;
+  background: #9d1a2d !important;
+  border-radius: 0 !important; }
+
 /* main_container
 ----------------------------------------------------------------*/
 #main_container {
@@ -88,7 +146,7 @@ h4 {
   @media (min-width: 550px) {
     #main {
       float: left;
-      width: 76%; } }
+      width: 75.3%; } }
   #main .contents_title {
     background-repeat: no-repeat;
     height: 30px; }
@@ -101,7 +159,7 @@ h4 {
     border: solid 1px #f9f8f6; }
     @media (min-width: 550px) {
       #main .item_container {
-        width: 33%;
+        width: 33.3%;
         padding: 15px 15px 25px 15px; } }
     #main .item_container .item_img {
       width: 100%;
@@ -152,7 +210,7 @@ h4 {
   @media (min-width: 550px) {
     #side_bar {
       float: right;
-      width: 23%; } }
+      width: 22.5%; } }
   #side_bar #item_search {
     background: white;
     padding: 20px;
@@ -268,7 +326,15 @@ h4 {
   border-bottom: solid 1px #887f69; }
   #page_top_container #page_top {
     margin-top: 60px;
-    float: right; }
+    text-align: center; }
+    @media (min-width: 550px) {
+      #page_top_container #page_top {
+        float: right; } }
+    #page_top_container #page_top #page_top_img {
+      width: 90px; }
+      @media (min-width: 550px) {
+        #page_top_container #page_top #page_top_img {
+          width: auto; } }
 
 /* footer
 ----------------------------------------------------------------*/
