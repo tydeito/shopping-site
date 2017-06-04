@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<title>APPLE BERRY&emsp;リストページ</title>
-	<meta content="雑貨屋APPLE BERRY_リストページ" name="descriprion">
+	<title>APPLE BERRY&emsp;商品ページ</title>
+	<meta content="雑貨屋APPLE BERRY_商品ページ" name="descriprion">
 	<link rel="stylesheet" href="css/normalize.css">
 	
     <!-- jQuery -->
@@ -102,62 +102,97 @@
 	    				<span class="breadcrumbs_text"><a href="list.html">カテゴリー名</a></span></p>
     				</div>
     			</div>
-    			<div id="list_cover_area">
-			        <img src="images/list/cate_image.jpg">
-    			</div><!--#cover_area-->
     			<div id="contents">
+    				<div class="products_back">
+	    				<div class="products_container">
+	    					<div class="clearfix product_name_container">
+	    						<div class="product_name">商品名が入ります</div>
+	    						<div class="serial_number">fa0001-91</div>
+	    					</div>
+	    					<div class="clearfix product_img_container">
+	    						<div id="display_img">
+	    							<img class="menu_item_img" src="images/products/pro_img_01.jpg" alt="product_img"/>
+	    						</div>
+	    						<ul id="list_img" class="clearfix">
+	    							<li id="menu_item_01"><img class="menu_item_img" src="images/products/pro_img_01.jpg" alt="product_img_01"/></li>
+	    							<li id="menu_item_02"><img class="menu_item_img" src="images/products/pro_img_02.jpg" alt="product_img_02"/></li>
+	    							<li id="menu_item_03"><img class="menu_item_img" src="images/products/pro_img_03.jpg" alt="product_img_03"/></li>
+	    							<li id="menu_item_04"><img class="menu_item_img" src="images/products/pro_img_04.jpg" alt="product_img_04"/></li>
+	    							<li id="menu_item_05"><img class="menu_item_img" src="images/products/pro_img_05.jpg" alt="product_img_05"/></li>
+	    							<li id="menu_item_06"><img class="menu_item_img" src="images/products/gray_pro_img.jpg" alt="gray_pro_img"/></li>
+	    							<li id="menu_item_07"><img class="menu_item_img" src="images/products/gray_pro_img.jpg" alt="gray_pro_img"/></li>
+	    							<li id="menu_item_08"><img class="menu_item_img" src="images/products/gray_pro_img.jpg" alt="gray_pro_img"/></li>
+	    							<li id="menu_item_09"><img class="menu_item_img" src="images/products/gray_pro_img.jpg" alt="gray_pro_img"/></li>
+	    							<li id="menu_item_10"><img class="menu_item_img" src="images/products/gray_pro_img.jpg" alt="gray_pro_img"/></li>
+	    						</ul>
+	    					
+	    					</div> <!--product_img_container-->
+	    					<div class="color_container">
+	    						<img class="color_img" alt="color" src="images/products/title_color.png">
+	    						<table class="color_table">
+	    							<tr>
+	    								<th></th>
+	    								<th>カラー1</th>
+	    								<th>カラー2</th>
+	    							</tr>
+	    							<tr>
+	    								<td class="td_title">サイズ</td>
+	    								<td>
+	    									<label>
+											    <input type="checkbox" name="checkbox01[]" class="checkbox01-input">
+											    <span class="checkbox01-parts"></span>
+										 	</label>
+										</td>
+	    								<td>
+	    									<label>
+											    <input type="checkbox" name="checkbox01[]" class="checkbox01-input">
+											    <span class="checkbox01-parts"></span>
+										 	</label>
+	    								</td>
+	    							</tr>
+	    						</table>
+	    					</div> <!--color_container-->
+	    					<div class="price_cart_container clearfix">
+		    					<div class="price_quantity_container">
+			    					<div class="price_container clearfix">
+			    						<img alt="price" src="images/products/title_price.png">
+			    						<div class="price_text">
+			    							<p>
+			    								<span class="price"><span class="yen">¥</span>1,000</span>
+			    								<span class="price_tax">(tax in)</span>
+			    							</p>
+			    						</div>
+			    					</div> <!--price_container-->
+			    					<div class="quantity_container clearfix">
+			    						<img alt="quantity" src="images/products/title_quantity.png">
+			    						<div class="quantity_color"></div>
+			    					</div> <!--.quantity_container-->
+		    					</div> <!--.price_quantity_container-->
+		    					<img class="add_cart_img" alt="add_cart" src="images/products/add_to_cart.png">
+		    				</div> <!--price_cart_container-->
+		    				<div class="description_container">
+		    					<div class="description_title">商品説明</div>
+		    					<div class="description_subtitle">■説明タイトル説明タイトル説明タイトル説明タイトル</div>
+		    					<div class="description_text">説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+			    					説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明<br>
+			    					テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+			    					説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ<br>
+			    					スト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+		    					</div>
+		    					<table class="description_table">
+		    						<tr>
+		    							<th>カラー</th>
+		    							<td>説明が入ります説明が入ります説明が入ります</td>
+		    						</tr>
+		    						<tr>
+		    							<th>サイズ</th>
+		    							<td>説明が入ります説明が入ります説明が入ります</td>
+		    						</tr>
+		    					</table>
+		    				</div> <!--description_container-->
+	    				</div> <!--.products_container-->
+	    			</div> <!--.products_back-->
     				<div class="container">
-    					<div id="new_items" class="clearfix">
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_01" src="images/top/item_01.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_02" src="images/top/item_02.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_03" src="images/top/item_03.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_04" src="images/top/item_04.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_05" src="images/top/item_05.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_06" src="images/top/item_06.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_01" src="images/top/item_01.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_02" src="images/top/item_02.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    						<div class="item_container">
-    							<a href="products.html"><img class="item_img" alt="Item_03" src="images/top/item_03.jpg"></a>
-    							<p class="item_text">商品名が入ります商品名が入ります商品名が入ります</p>
-    							<p class="item_price">¥10.000 (tax in)</p>
-    						</div>
-    					</div><!--#new_items-->
-    					<div class="back_next_navi clearfix">
-    						<a class="back_navi_a" href="list.html"><div class="back_navi">Back</div></a>
-    						<a class="next_navi_a" href="list.html"><div class="next_navi">Next</div></a>
-    					</div> <!--back_next_navi-->
     				</div><!--.container-->
     				<div class="container">
     					<div id="popular_items" class="clearfix">
@@ -276,7 +311,7 @@
 					</div><!--.side_bar_contents_container-->
 				</div><!--side_bar_menu_container (shop_info)-->
     		</div><!--#side_bar-->
-    	</div><!--.clearfix-->
+    	</div><!--main_container-->
     	<div class="clearfix" id="page_top_container">
 	    	<div id="page_top">
 	    		<a href="#"><img id="page_top_img" src="images/top/pagetop.png"></a>

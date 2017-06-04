@@ -8,6 +8,7 @@ $baseColor: #f9f8f6;
 $subColor: #887f69;
 $keyColor: #449F55;
 $fontColor: #000000;
+$lineColor: #e8e4da;
 
 // 
 
@@ -651,7 +652,7 @@ footer{
 
 .breadcrumbs {
         
-    background: #e8e4da;
+    background: $lineColor;
     height: 35px;
     margin: 0;
     margin-bottom: 10px;
@@ -721,3 +722,304 @@ footer{
         float: right;
     }
 }
+
+
+
+
+
+
+/* products.html
+----------------------------------------------------------------*/
+
+
+
+/* .product_name
+----------------------------------------------------------------*/
+
+.products_back{
+    background: white;
+    
+    
+    .products_container{
+        width: 82.9%;
+        margin: auto;
+        
+        .product_name_container{
+            
+            padding: 40px 0 30px 0;
+            border-bottom: solid 1px $lineColor;
+            margin-bottom: 20px;
+    
+            .product_name {
+                font-size: 1.4rem;
+                font-weight: bold;
+                float: left;
+            }
+            
+            .serial_number {
+                font-size: 1rem;
+                float: right;
+                color: #a6a6a6;
+            }
+            
+        }  //   .product_name_container
+        
+        
+/* .product_img
+----------------------------------------------------------------*/
+        
+        .product_img_container{
+            border-bottom: solid 1px $lineColor;
+            padding-bottom: 6px;
+            
+            #display_img {
+                float: left;
+                width: 70.6%;
+                
+                img{
+                    width: 100%;
+                }
+            }
+            
+            #list_img {
+                
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                height: auto;
+                
+                
+                @media (min-width: 550px){
+                    float: right;
+                    width: 29.3%;
+                }
+           
+                
+                li{   
+                    float: left;
+                    /*width: 45%;
+                    margin-left: 5%;
+                    margin-bottom: 5%;
+                    font-size: 0;*/
+                    
+                    @media (min-width: 550px){
+                        float: left;
+                        width: 45%;
+                        margin-left: 5%;
+                        margin-bottom: 5%;
+                        font-size: 0;
+                    }
+                    
+                    img{
+                        width:100%;
+                    }
+                }
+                
+            }  //   #list_img
+            
+        } //  .product_img_container
+        
+        
+        
+/* Color_Size
+----------------------------------------------------------------*/
+        
+        .color_container{
+            
+            margin-bottom: 20px;
+        
+            .color_img{
+                margin: 20px 0 20px 0;
+            }
+            
+            .color_table {
+                width: 100%;
+                
+                
+                th,td{
+                    text-align: center;
+                    border: solid 1px $lineColor;
+                    height: 40px;
+                    color: $subColor;
+                    
+                    
+                    /* checkbox
+                    ----------------------------------------------------------------*/
+                    
+                    .checkbox01-input{
+                        display: none;
+                    }
+                    .checkbox01-parts{
+                        position:relative;
+                        margin-right: 20px;
+                    }
+                    .checkbox01-parts::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid $lineColor;
+                        border-radius: 4px;
+                    }
+                    
+                    .checkbox01-input:checked + .checkbox01-parts{
+                        color: #009a9a;
+                    }
+                    
+                    .checkbox01-input:checked + .checkbox01-parts::after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: -5px;
+                        left: 5px;
+                        width: 7px;
+                        height: 14px;
+                        transform: rotate(40deg);
+                        border-bottom: 3px solid $subColor;
+                        border-right: 3px solid $subColor;
+                    }  //  チェックマークのデザイン
+                    
+                    //  checkbox
+                    
+                
+                }
+                
+                th{
+                    background: $baseColor;
+                }
+                
+                .td_title{
+                    background: $baseColor;
+                }
+            } //  .color_table
+        } //   .color_container
+        
+
+/* price、Quantity、add Cart
+----------------------------------------------------------------*/
+        .price_cart_container{
+            border-bottom: solid 1px $lineColor;
+            
+            .price_quantity_container{
+                float:left;
+                width: 57%;
+        
+                .price_container{
+                    
+                    padding: 24px 0 12px 0;
+                    border-top: solid 1px $lineColor;
+                    border-bottom: solid 1px $lineColor;
+                    
+                    img {
+                        float: left;
+                        display: inline-block;
+                    }
+                    .price_text p{
+                        float: left;
+                        height: 20pz;
+                        margin: -10px 0 0 70px;
+                        
+                        .price{
+                            color: #e80f66;
+                            font-size: 2.2rem;
+                            
+                            .yen{
+                                font-size: 1.4rem;
+                            }
+                        } //   .price_text p
+                        
+                        .price_tax {
+                            font-size: 1.4prem;
+                        }
+                    } //   .price_text p
+                    
+                } //   price_container
+        
+                .quantity_container{
+                    padding: 15px 0 15px 0;
+                    width: 100%;
+                    margin: 0;
+                    
+                    img{
+                        display: inline-block;
+                        float:left ;
+                        padding-top: 15px;
+                    }
+                    
+                    .quantity_color {
+                        float: left;
+                        display: inline-block;
+                        width: 46%;
+                        height: 40px;
+                        background: white;
+                        border: solid 1px $lineColor;
+                        margin-left: 13%;
+                    }
+                
+                } //   .quantity_container
+            } //   .price_quantity_container
+            
+            .add_cart_img{
+                float: right;
+            }
+        } //   .price_cart_container
+        
+        
+/* Description (商品説明)
+----------------------------------------------------------------*/
+        .description_container{
+            padding-bottom: 80px;
+            
+            .description_title{
+                padding: 40px 0 20px 0;
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: $subColor;
+                border-bottom: solid 1px $subColor;
+                margin-bottom: 30px;
+            }
+            
+            .description_subtitle{
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: $subColor;
+                margin-bottom: 20px;
+            }
+            
+            .description_text{
+                font-size: 1.4rem;
+                margin-bottom: 30px;
+            }
+        
+            .description_table{
+                width: 100%;
+                height: 40px;
+                
+                th,td{
+                    font-weight: normal;
+                    border: solid 1px $lineColor;
+                    color: $subColor;
+                }
+                
+                th{
+                    width: 28%;
+                    background: $baseColor;
+                }
+                
+                td{
+                    padding: 12px;
+                }
+                
+                
+            }
+        } //   .description_container
+        
+        
+        
+    
+    }  //    .products_container
+    
+} // .products_back
