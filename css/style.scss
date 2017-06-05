@@ -740,6 +740,11 @@ footer{
     background: white;
     margin:0 -2.5% 0 -2.5%;
     
+    @media (min-width: 550px){
+            margin: 0;
+        }
+    
+    
     .products_container{
         margin: auto;
         width: 95%;

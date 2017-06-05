@@ -452,6 +452,9 @@ footer #copyright {
 .products_back {
   background: white;
   margin: 0 -2.5% 0 -2.5%; }
+  @media (min-width: 550px) {
+    .products_back {
+      margin: 0; } }
   .products_back .products_container {
     margin: auto;
     width: 95%;
