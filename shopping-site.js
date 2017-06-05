@@ -18,7 +18,7 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
-  $("#list_img img").click(function(){
+  $("#list_img > .sp_menu_item_early > img").click(function(){
     var img_src = $(this).attr("src");
     $("#display_img img").attr("src", img_src);
   });
